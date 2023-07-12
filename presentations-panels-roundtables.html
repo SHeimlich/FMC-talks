@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    margin: 5px;
+}
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: 5px;
+  font-size: 15px;
+  border-style: solid;
+}
+
+.closed {
+    border-width: 3px;
+    border-radius: 25px;
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+}
+
+.active {
+    border-width: 3px 3px 3px 3px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border-width: 0px 5px 5px 5px;
+  border-radius: 0px 0px 25px 25px;
+  border-style: solid;
+}
+
+.tech {
+    background-color: #062f4f;
+}
+
+.teamorg {
+    background-color: #813772;
+}
+
+.marketing {
+    background-color: #B82601;
+}
+
+.eventlogs {
+    background-color: #0C5E9C;
+}
+
+.scout {
+    background-color: #CF59B7;
+}
+
+.pm {
+    background-color: #C3583D;
+}
+
+.awards {
+    background-color: #417EAC;
+}
+
+.other {
+    background-color: #D79DCB;
+}
+
+.clear {
+    background-color: darkslategrey;
+}
+
+.talk{
+    margin: 5px;
+}
+
+#start, #sustain, #scale {
+    background-color: darkgrey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* talks + legend = 100% */
+.talks {
+    width: 75%
+}
+
+/* talks + legend = 100% */
+.legend {
+    width: 25%
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    outline: 2px;
+    border-style: solid;
+    margin: 5px;
+}
+
+.selected {
+    border-width: 4px;
+}
+
+.session {
+    background-color: darkgrey;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+    <div class="column talks">
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation tech sustain scale">
+                <h2>Automating with AprilTags & PhotonVision</h2>
+                <p>PhotonVision Team</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>The PhotonVision team will cover the technical details of identifying and using Fiducial targets for 2023 and beyond. Development process, existing resources, integration strategies, and case studies from the 2023 game will be included. The end focus will be not just how to build better autonomous strategies, but a more effective teleop robot through software assist features.</p>
+        
+                <h2>Bio</h2>
+                <p>The PhotonVision team has been developing libraries for integrating AprilTag information into FRC robots since before the change was announced. They delivered the most popular open-source solution for working with AprilTags in 2023. Additionally, the team wrote the WPILib documentation on AprilTags for 2023.</p>
+            
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation teamorg pm start sustain">
+                <h2>Build a Future: Roadmap to a Sustainable Community FRC Program</h2>
+                <p>Abraham Martinez: Team 6832, STEAMex</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Managing a community FRC program can be challenging, especially in regions where FIRST is still relatively unknown or still growing. This conference will cover the basics from starting the organizational structure and logistics of opening a STEAM program; generating successful initiatives in technical, business, and social project skills to recruit, train, and retain kids (members) and adults (mentors); up to preparing a scaling model for competitiveness at FIRST events. Participants will get to learn different solutions to common issues for community teams such as funding, sponsor search, community engagement, outreach, priority lists, and resource obtaining. Additionally, the conference will include recommendations on positive leadership skills and practical examples of several teams opened under the STEAMex methodology of community-based STEAM-FIRST programs (Global STEAM Community), present in a dozen countries such as Lesotho, Suriname, Barbados, and Colombia.</p>
+        
+                <h2>Bio</h2>
+                <p>I'm an FRC alumni (5526) and founder, since 2017, of Project STEAMex, Mexico's only NGO/community-based FRC program. I have worked mentoring +60 FIRST teams and 14 FGC teams in the past 10 years, opened 18 FRC teams in 11 different nations (16 community-based), currently work as Administative Mentor for the Peñoles support office (Peñoles, sponsor of 26 FRC teams and Laguna Regional), as well achieved over 35 FIRST awards (8 Rookie awards at the Championship). I majored in International Business, certifed as PM by the Project Management Institute, I currently work as the Institutional Relations Coordinator for the Mexican Foreign Trade Council, been teaching as college professor for the past 3 years, and studied my MBA in Positive Leadership. I have had official recognitions by the city of San Pedro Garza Garcia, named Global Youth Ambassador by TheirWorld, featured at Voices Of Youth (UNICEF Official Blog), and member of the Millennium Fellowship by the United Nations Academic Impact.</p>
+            
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation teamorg marketing start scale sustain">
+                <h2>Crafting a Lasting Legacy: The Art of Building a Resilient Brand</h2>
+                <p>Jenna Kay Foertsch: Team 118, Robonauts</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Over 27 years, the Robonauts have created a profound connection between branding and the cultivation of a lasting legacy. This talk will explore how to create and maintain a strong brand with a deep dive on how branding leads to a world-class team culture.</p>
+        
+                <h2>Bio</h2>
+                <p>Jenna Kay Foertsch (She/They) graduated from the University of Minnesota – Twin Cities with a B.S. in Business and Marketing Education with an emphasis in Policy. Her love for STEM was discovered through participating in FIRST Robotics initially as a student, and now as a mentor for the Robonauts, a NASA FIRST Robotics house team. She is also a core member of the Everybot Initiative, a compilation of resources that level the robotics playing field by providing low-resource teams with competitive build plans.</p>
+                
+                <h2>Tracks</h2>
+                <ul>
+                    <li>>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Marketing</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain eventlogs tech">
+                <h2>Debugging Robots at Events (CSA perspective)</h2>
+                <p>James Kuszmaul: Team 971, Spartan Robotics</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>The goal of this presentation is to give people an idea of how to approach debugging issues with their robots at events and at home. This presentation will be given from the perspective of talking through how a CSA (Control Systems Advisor) at an event would typically approach helping a team with various types of electrical and software issues. In doing this a few topics will get covered (presentation timing depending):
+                    * General robot debugging processes and approaches, with a focus on how this applies at events.
+                    * Enumeration of common issues to watch out for, and what resources are available to help.
+                    * Some discussion of the volunteer <-> team interaction involved with CSA'ing.
+                    * Some discussion of how the CSA volunteer role works.</p>
+        
+                <h2>Bio</h2>
+                <p>I have been CSA'ing at events for ~9 years now and have spent copious amounts of time dealing with robot debugging & bringup both with my team and professionally.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Event Logistics</li>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale teamorg other">
+                <h2>DEIB in Robotics Teams</h2>
+                <p>Sohini Stone: Google & Team 3501, Fremont High Firebots</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>More than ever before, it's important that mentors are equipped to support an inclusive environment that engages a diverse group of participants, and supports students in truly belonging. While disparities in STEAM are decreasing 
+
+                    In this session, we will create a foundational understanding of the data and language around diversity, equity, inclusion, and belonging (DEIB). We will then explore the impacts in STEAM, and how it's playing out with FIRST specifically. Finally, participants will have an opportunity to participate in small group discussions that will support practical, actionable next steps.
+                    
+                    The structure of this session will be a combination of didactic and small group discussions, along with Q&A. </p>
+        
+                <h2>Bio</h2>
+                <p>Sohini Stone (MD/MBA)
+                    Robotics mentor, pediatrician, and mom; Sohini has experienced the ups and downs of being a female person of color in traditionally male dominated fields.
+                    
+                    Robotics: Sohini has been part of FIRST since 1997 – as a student member of Team 151, a mentor for team 246 and now 3501 for the past 11+ years. She strives to create an inclusive environment for all team members, and ensure that regardless of economic means, students are able to take full advantage of all the program has to offer.
+                    
+                    Professional Experience: Sohini is a Pediatrician with a background in patient safety, quality and equity.  As Chief Medical Officer for Global Employee Health at Google, she leads a team of health experts focused on providing equitable, evidence-based programs to promote health and wellbeing of Google’s workforce, their families, and the surrounding community. In this capacity, she works closely with multiple employee resource groups at Google and has led multiple DEIB initiatives.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>  
+                    <li>Other: Diversity, Equity, and Inclusion</li>                  
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain teamorg">
+                <h2>Doing the Math: How Teams Succeed</h2>
+                <p>Alan Federman: Team 5104, BreakerBots</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>In 1999 I began mentoring Team 255, Foothill Continuation High School, in the East Side Union District of San Jose, CA. In their first season at the Nationals at Epcot, Team 255 finished in the bottom 10%.  In 2000, just 1 year later they captained the Championship Alliance.  One of the team co-captains had been involved in a street gang, and as a result of the competition won a 4 year scholarship to UC Berkeley. 10 of the graduating seniors went on to 4 year colleges, a remarkable result for a school whose main aspiration was to grant GEDs.
+
+                    I believe 3 key principles: Passion - Planning - Perseverance - were the keys to their success.
+                    </p>
+        
+                <h2>Bio</h2>
+                <p>"I have mentored 10 FRC teams and other robotics teams over the last 25 years. I worked for Mark Leon at NASA, and was responsible for initiating webcasting of FRC events starting in 1999.  I have been wanting to tell the story of Team 255 for many years. I have even written a rough draft of our story:
+                    
+                    While FIRST certainly changed the lives of my students, it also has changed mine. I finished my professional career as a robotics engineer at the Stanford AI Laboratory, and helped found Ubiquity Robotics, a commercial robot vendor."</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed panel sustain scale eventlogs scout">
+                <h2>Drive Coach Panel</h2>
+                <p>Cory Walters (2767), Mike Corsetto (1678), and Norm Morgan (2468)</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Join Cory, Mike, and Norm for a panel discussion on all things drive coaching!</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Event Logistics</li>
+                    <li>Scouting and Strategy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed panel scale sustain teamorg other">
+                <h2>Ethics and Core Values in Team Culture Panel</h2>
+                <p>Presenters TBA</p>
+            </button>
+            <div class="content">
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                    <li>Other: Ethics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale tech teamorg">
+                <h2>Everybot for Everybody: Implementation of the Everybot at All Levels</h2>
+                <p>Jenna Kay Foertsch and Ryan Stockton: Team 118, Robonauts</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>The Robonauts Everybot is an affordable, competitive, and elegant robot that can be built with only basic tools and items found in either the kit of parts, purchased from a local hardware store, or online from various FRC suppliers. The goal of the initiative is to provide a more accessible avenue for students to have a positive FRC experience regardless of their unique circumstances or other limitations. In this talk, we’ll be telling the story of the Everybot. From inception to inspiring a starter robot in the 2024 kit of parts. The Everybot is raising the floor as a game-changing resource for both rookie and hall-of-fame team’s alike. 
+
+                    We will discuss multiple factors of the Everybot, from our mission, to our execution, to a deep dive on how to best implement the Everybot on multiple levels.</p>
+        
+                <h2>Bio</h2>
+                <p>Jenna Kay Foertsch (She/They) graduated from the University of Minnesota – Twin Cities with a B.S. in Business and Marketing Education with an emphasis in Policy. Her love for STEM was discovered through participating in FIRST Robotics initially as a student, and now as a mentor for the Robonauts, a NASA FIRST Robotics house team. She is also a core member of the Everybot Initiative, a compilation of resources that level the robotics playing field by providing low-resource teams with competitive build plans.</p>
+
+                <p>Ryan Stockton currently works as a Robotics Specialist at NASA’s Johnson Space Center designing lunar exploration rovers. He has worked on the design of the VIPER flight unit, prototype rovers such as the Lunar Terrain Vehicle and Space Exploration Vehicle, and NASA’s Robotics Alliance Project which sponsors hundreds of FRC teams every season. 
+
+                    He is an alumnus and mechanical mentor of FRC Team 118, the Robonauts and also a Co-Lead of the Robonauts Everybot program.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start tech">
+                <h2>F1 and FRC the pinnacle of engineering</h2>
+                <p>Jesús Betancourt: Team 6832, STEAMex</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Steal from the best, invent the rest; Formula 1 is the most competitive sport in the world and has some of the best engineering wonders. F1 and FRC have very high performance teams and are both some of the biggest engineering challenges in the world. Philosophies, roles and strategies in F1 can represent a framework that can be used in FRC. In this presentation we will compare how F1 and FRC teams face the challenges and what FRC teams can learn from F1 to have excellence in our design processes.</p>
+        
+                <h2>Bio</h2>
+                <p>Lead mentor for team 6832 in charge of designing the team's methodology and documentation that allowed us to win Excellence in Engineering award at Championship this year. Part of 6832 scouting team, 6832 is the winner of Scouting Palooza 2022 (Scouting world championship). I was elected to be part of the second cohort of FIRST Educators Recognition Program</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain teamorg">
+                <h2>FIRST Culture and Ethics</h2>
+                <p>Andy Baker: AndyMark & Team 45, TechnoKats</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>I will speak about the strong culture within the FIRST community regarding gracious professionalism and ethics. I will tell stories, give examples, explain history, and describe why having a strong culture and ethical foundation is a key component to the success of FIRST.</p>
+        
+                <h2>Bio</h2>
+                <p>Andy is a husband, father, engineer and business owner. He has been an FRC mentor since 1998, and was able to witness the beginning of FIRST in 1992. Andy is the president and co-founder of AndyMark, and has been a key member of the FIRST community for over two decades. Andy and his wife, Mary, lead the operation of AndyMark, striving to serve the FIRST community in many ways. All three of their daughters have benefitted from the FIRST program and are still involved as volunteers. Andy has served as an FIRST event judge, head referee, lead robot inspector, but mainly volunteers as a robot inspector at FIRST events. He received the Championship Woodie Flowers Award in 2003, is the designer of the WFFA mobius trophy, and still serves as a Woodie Flowers Award judge. </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale eventlogs scout">
+                <h2>FRC Strategy Blueprint</h2>
+                <p>Cory Walters: Team 2767, Stryke Force</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>How to engage in match strategy at the FRC events. Topics are: Drive Team, Game Plan, Saturday Afternoon, Strategy, and Game Evolution. 
+
+                    It will do a walk through of an entire event on how to work at match strategy from quals to Saturday afternoon. Explain different strategy's to implement from different games to be successful on the field. Also how the game evolves from week 1 to worlds. 
+                    
+                    Link to presentation. https://prezi.com/p/vvqfmalvsdxb/frc-strategy-101/</p>
+        
+                <h2>Bio</h2>
+                <p>20 year of FRC experience. Drive coach for 13  years on a world championship team. Driver for my own high school team. Seen and played in many FRC games. I am able to breakdown many of the game strategy's from memory or watching video of match's. Played on both the largest stages as well as working with rookie teams at lower events. I can bring a district competition view to a reginal competition area. </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Event Logistics</li>
+                    <li>Scouting and Strategy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale scout">
+                <h2>Gettin’ Picky About Being Picky: How to Navigate Alliance Selection</h2>
+                <p>Brian Maher: Team 333, MEGALODONS</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Contrary to popular belief, most FRC events are not won or lost during a match, but during alliance selection. Learn how to use scouting data to make a pick list, navigate the alliance selection process, and make a good impression on alliance captains in order to have your best shot at a blue banner. We'll discuss best practices, case studies, and common mistakes for all things alliance selection.</p>
+        
+                <h2>Bio</h2>
+                <p>During my 7 seasons as a mentor on FRC 2791 Shaker Robotics (2016-2019) and FRC 333 MEGALODONS (2020-present), I've focused on getting my students excited about analyzing scouting data and scheming up winning strategies. Smart scouting and picking has helped both teams punch above their weight at regionals and offseason events, bringing home 4 regional wins and 7 offseason wins in that time. I love sharing the lessons I've learned over the years, which I've done in past conference presentations, the Gettin' Picky series that Katie Widen and I wrote together, and my Chief Delphi ramblings.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Scouting and Strategy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed roundtable sustain scale teamorg">
+                <h2>Roundtable on Grants</h2>
+                <p>Renee Becker-Blau: FIRST Wisconsin</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Join Renee for a facilited roundtable on all things grants!</p>
+        
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed roundtable sustain scale pm teamorg">
+                <h2>Handling Team Growth Sustainably Roundtable</h2>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Join a facilitaed roundtable on how to handle your team's growth sustainably.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain teamorg">
+                <h2>How to control your own teams funds</h2>
+                <p>Lonny Weissman: Team 668, The Apes of Wrath </p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>This presentation is a guide to establishing a Non-profit for either Community or School teams. The presentation provides a simple guide that allows a team to control all of their funds without any income tax liability. It will take participants step by step through the process without requiring an attorney. This is to help with the federal side of establishing a non-profit and the California State requirements. For those who are not a resident entity in CA you would need to become familiar with your individual state tax law for a non-profit</p>
+        
+                <h2>Bio</h2>
+                <p>I have worked with several teams to establish a non-profits as well as having established and run our team non-profit for the last 7 years. </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed panel sustain scale awards">
+                <h2>Impact Award Panel</h2>
+                <p>Members of the Hall of Fame</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Come along for a panel with members of the FIRST Hall of Fame on all things related to the impact award and outreach.</p>
+        
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Awards</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale eventlogs technical scout">
+                <h2>Managing Luck: High Reliability Processes to Improve Your FRC Odds</h2>
+                <p>Brendan Simons: Team 5406, Celt-X</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Using lessons from  the Nuclear, Aviation and Medical industries, we will present general strategies, and specific examples, to maximize your on-field reliability, and avoid Murphy's Law.</p>
+        
+                <h2>Bio</h2>
+                <p>Brendan Simons, P. Eng, graduated from Carleton University (Ottawa, Canada) and has worked as a design engineer and project manager in the nuclear industry for 20 years.  He co-founded Celt-X Robotics (5406) in 2015 with a focus on competitiveness, continuous improvement, and sustainability.  He is proud that the team has grown since then into a successful, year-round program backed by dedicated mentors, students and sponsors.  In 2023 Brendan was honoured to receive the Woodie Flower Finalist Award for the Ontario District </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Event Logistics</li>
+                    <li>Technical</li>
+                    <li>Scouting and Strategy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale other">
+                <h2>Meaningful Inclusion in FIRST Robotics</h2>
+                <p>Kara Boyer: Team 5414, Pearadox</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>This session is intended for mentors from around the country to share resources and experiences related to hosting inclusion events both during team meetings, inter-team socials and local competitions.  The focus of this session is improving engagement and retainment of underrepresented and underserved populations in FRC including girls, Black youth and LGBTQ+ communities.  This session will be small group discussions where we believe we can achieve greater knowledge sharing.
+
+                    Girls Get Together - Brilliant Black Builders - Safe Space in STEM 
+                    
+                    These are three continuous event series where we invite industry professionals and engineers to connect and network with underrepresented communities in FIRST. We recognize that many of these students do not have mentors or even other students on their team they identify with (or look like). We strive to use this event as a bridge that allows underrepresented youth to meet their role models and others their age making lasting connections.</p>
+        
+                <h2>Bio</h2>
+                <p>Kara Boyer is a mechanical engineer working for MISTRAS Group and FIRST Robotics Competition alumni. Kara grew up in Houston, TX where she became the Team Captain of her FRC Team 118, The Robonauts. She helped start Pearadox FRC Team 5414 in 2014 and has since started a internal clubs known as Gearbox Girls, Brilliant Black Builders and Safe Space in STEM, where she serves as an advisor for several initiatives focused on providing more opportunities for underrepresented and under-served communities in STEM. She believes that building meaningful connections and developing a sense of belonging is the most effective way to retain underrepresented and under-served communities in STEM fields.  In her career as a FIRST Robotics mentor, Kara has hosted countless inclusion social events in the Greater Houston area and 17 inclusion events at various FRC competitions, 7 of which at the FRC World Championship.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Other: Diversity, Equity, and Inclusion</li>                  
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale teamorg">
+                <h2>Mentor Built: Enhancing Your Team Workspace</h2>
+                <p>Ben Martin: Team 2481, Roboteers</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>From January 2021 to January 2023, Roboteers Team 2481 mentors, students and alumni designed and constructed a 6,000+ sq ft team building on the Tremont High School grounds, with team members doing almost all of the fundraising and construction work. The construction itself was completed in less than five months, and the full project cost less than $300k. The presentation will cover how we made it happen and how you can execute a similar project yourself. </p>
+        
+                <h2>Bio</h2>
+                <p>I was one of the three main designers/executers for the aforementioned building project, and I can answer questions around the choices we made with significant detail. We've posted several pictures of our new building here for additional context: http://team2481.com/robotics-center/. Outside of general FRC building-construction knowledge, I'm entering my 20th season with FRC, where I have held a number of roles including Lead Mentor/Main Contact. </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale awards teamorg">
+                <h2>Mentorship for Empowerment</h2>
+                <p>Isriah Keila and Michael Johnson: Team 321, RoboLancers</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Student-centered? Student-led? Mentor-built? There are lots of terms FIRST teams use to describe (or deride) the roles of students and adults in our program. We’ll share a bit about the challenges and successes our team has found in this area. Then we’ll lay out our vision for adult mentorship as a tool for empowering student leadership and student learning. Finally, we’ll open the floor and moderate a respectful discussion on the role of mentors on our teams.
+
+                    Some context: Our program in 22-23 had 168 students on 1 FRC and 6 FTC teams with 5 adults total. This is not recommended. We’re making big changes to our program for 23-24 in an effort to improve the quantity of mentorship on our teams while maintaining our ethos of mentorship for empowerment. It’s a work in progress, and we’re eager to share what we’ve learned and gather additional perspectives and advice from the community.</p>
+        
+                <h2>Bio</h2>
+                <p>The presenters are mentors for 2023 Championship FIRST Impact Award Winner team 321, the RoboLancers. Through the nonprofit Philadelphia Robotics Coalition, the presenters train and support teachers to become successful FIRST coaches.
+
+                    Michael Johnson has been the head coach of the RoboLancers since 2014. He is a teacher of engineering, physics, and robotics at Central High School where the RoboLancers are based. He holds an MS in Education from the University of Pennsylvania and an SB in Mechanical Engineering from MIT.
+                    
+                    Isriah Keila has been a coach of the RoboLancers since 2021. He is the full-time Program Manager for the Philadelphia Robotics Coalition, the non-profit organization founded by the RoboLancers. He has been involved in FIRST for 17 years, an alum of every FIRST program from kindergarten through high school, and mentoring thereafter. He holds a BS in Management Information Systems from Florida State University.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Awards</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain scale awards teamorg">
+                <h2>Mission and Vision: Strategies for Impact Success</h2>
+                <p>Isriah Keila: Team 321, RoboLancers</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>This talk is loosely informed by the Impact program that our team has built over the last 10 years. Lots of teams present for Impact (and Chairman's in the past) and don't win, or don't go as far as they expect to. There are a lot of mysteries around the award, preparation, presentation process, and what goes on behind the curtain of the judging process.
+
+                    We have some guiding principals that were initially developed solely for Impact, but actually have significant implications in overall team strategy, culture development, other awards, and robot design. Asking what you're doing, and why you're doing it, are key to developing a successful and sustainable team. The focus of this talk will be on the Impact award, but much of the content can, and should, be applied elsewhere.</p>
+        
+                <h2>Bio</h2>
+                <p>I was a student participant in every level of FIRST, from JFLL to FRC, and now coach team 321, the RoboLancers, the 2023 Impact champion award winning team. Team 321 has grown both a successful robotics program and an independent nonprofit, the Philadelphia Robotics Coalition, of which I am the Program Manager. This year, we fully funded over 130 FIRST teams, an additional 50 unofficial teams, and ran nearly 20 events. Between myself and my co-speaker, we have 23 years of FRC experience, 15 of which as Chairman's and Impact mentors, and a handful of those were also as judges.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Awards</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start teamorg">
+                <h2>Navigating the Team Dashboard for Lead 1 and Lead 2</h2>
+                <p>Lonny Weissman: Team 668, The Apes of Wrath</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>This presentation will walk participants through the team dashboard from registration through all aspects of the using the dashboard.</p>
+        
+                <h2>Bio</h2>
+                <p>As a FIRST Senior Mentor I deal with all of the team questions about the Team Dashboard and have 23 years of experience with team IT questions concerning the Dashboard</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale pm awards other">
+                <h2>Networking and Strengthening Your Local FRC Community</h2>
+                <p>Andrew Hartnett: Team 5414, Pearadox</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>A key part of improving your team and local FRC community is building a strong local network of mentors. Things like mentor workshops, geographically based slacks, visits to other teams shops, and invitations to other teams to come to your shop are things that can help improve everyone in the process. 
+
+                    This workshop will be a mix of presentation and discussion about why it matters, what has worked for some, what hasn't worked and why, and the timing for building a good local network. 
+                    
+                    This is targeted for both those that can offer support and those looking to receive support. In reality, many teams might be in a position for both; I routinely hear from top teams about support they received from others along the way. When digging into the data about team attrition rate, we believe there is a strong correlation between teams that survive and mentors that build a network of support</p>
+        
+                <h2>Bio</h2>
+                <p>Andrew Hartnett has been in FRC since 2005, having taken off 2008 - 2010 and founded and is lead mentor for FRC5414, Pearadox. Pearadox has won a district champs culture changing award 2020-2023, and has been an event finalist numerous times since 2019. This success didn't come from Pearadox's inception however, as they steadily improved every year after struggling on the field from their rookie year. Networking was a key part in Pearadox's growth and success as an FRC organization.
+
+                    Additionally, Andrew has co-hosted FRC Mentor workshops with WFA Allen Gregory and fellow WFFA Scott Rippetoe for the past few years. In 2022 Allen, Scott, and Andrew were asked to bring the mentor workshop ""on the road"" and hosted workshops in San Antonio and Dallas in addition to the annual Houston mentor workshop and are currently working to encourage local mentors in those areas to continue those this year. Andrew also helps to manage the Texas Mentors slack</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Awards</li>
+                    <li>Project Management</li>
+                    <li>Other: Networking</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain scale eventlogs">
+                <h2>One Match at a Time: How the Robonauts Execute at Events</h2>
+                <p>Ryan Stockton: Team 118, Robonauts</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>The Robonauts have refined our approach to competition success over the last 27 years and have documented our processes for how to successfully execute at competitions both on and off the field.
+
+                    We will discuss how we execute successful match strategy, collect accurate scouting data, deliver a robot to the drive team performing at its peak, and how our media crew captures it all. 
+                    </p>
+        
+                <h2>Bio</h2>
+                <p>Ryan Stockton currently works as a Robotics Specialist at NASA’s Johnson Space Center designing lunar exploration rovers. He has worked on the design of the VIPER flight unit, prototype rovers such as the Lunar Terrain Vehicle and Space Exploration Vehicle, and NASA’s Robotics Alliance Project which sponsors hundreds of FRC teams every season. 
+
+                    He is an alumnus and mechanical mentor of FRC Team 118, the Robonauts and also a Co-Lead of the Robonauts Everybot program.
+                    </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Event Logistics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale awards">
+                <h2>Putting Your Best Foot Forward for Judging</h2>
+                <p>David Runneals: Team 3928, Team Neutrino</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Ever wonder what judges look for or how to win that award? Wonder no more! We'll touch on tips and tricks to help your team present themselves professionally to judges to improve their chance at winning an award. NOTE: No confidential information will be presented or discussed and this is just the opinion of one (or maybe 2 judges).</p>
+        
+                <h2>Bio</h2>
+                <p>I have mentored 2 FRC teams for just over 8 years. In addition I have been judging team and machine attribute awards along with Dean's List the past 3 years at several regionals and Championship.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Awardst</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain scale pm tech other">
+                <h2>Reinventing FRC to push the limits of technology by accepting the greater challenge</h2>
+                <p>Marshall: Team 900, The Zebracorns</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>For many, the challenge in FRC is the competition itself but for a select few, the challenge is how to play the game while keeping an audience of exceptionally bright students and mentors motivated and working towards a set of common goals.
+
+                    The talk will explore what creativity with software looks like and how to build a program tailored for students and mentors who have a compulsion to go above and beyond the normal.
+                    
+                    The talk will use the experience of mentoring The Zebracorns, FRC Team 900 from Durham North Carolina, to explain how to push the boundaries of what technology is used in FRC and is commonly available to high school students, along with making technology more accessible and hinting at what’s likely coming in the future.</p>
+        
+                <h2>Bio</h2>
+                <p>Marshall Massengill is a dynamic speaker and leading authority in using ChatGPT to write conference biographies. He has inspired Chief Delphi lurkers worldwide for nearly two decades and was once voted the most sardonic poster of all time. He was raised with a strong work ethic, which lead him to graduate from NCSSM and eventually earn a computer engineering degree from NCSU. Known for his engaging storytelling and absurd strategies, Marshall connects with audiences and leaves a lasting impact. He is also not a prolific author, a former FUN media personality, and advocate for mental health. Marshall prioritizes family and enjoys outdoor exploration.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Technical</li>
+                    <li>Other: Creativity</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain scale pm">
+                <h2>Scaling Projects through Sustainable Development</h2>
+                <p>Jesús Betancourt: Team 6832, STEAMex</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Understand what is sustainable development and how can we as teams collaborate to fulfill the UN's 17 Sustainable Development Goals. It can help rookie teams to create a path to how they can orient their social impact, it can help novice or veteran teams to have a more clear direction of their projects and how they can organize their project portfolios. </p>
+        
+                <h2>Bio</h2>
+                <p>I am a FIRST alum and honoree of the second cohort of the FIRST Educators Recognition Program. I mentor FRC team 6832, the only UN-certified team committed to the Sustainable Development Goals since 2018. With a sustainability diploma from the Universidad de Monterrey, I have delivered keynote speeches at FIRST Robotics Fest (by 3478) and an event hosted by 6652, focusing on sustainable development. Additionally, I had the privilege of being an invited professor, teaching a class on the impact of projects on sustainability to senior mechanical, systems, industrial, and robotics engineering students. Passionate about sharing knowledge, I aim to inspire positive change for a more sustainable future.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale tech">
+                <h2>Sheet Metal from Concept to the Cosmos </h2>
+                <p>Ryan Stockton: Team 118, Robonauts</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Sheet metal design is a powerful design technique that can be used to create stiff robot structures that allow parts to be manufactured from thinner materials, ultimately saving weight. Sheet metal structures also allow for highly integrated designs that can reduce part count. This talk will cover basic sheet metal designs that can be produced with simple box/pan brakes to complex integrated sheet metal structures produced with a CNC brake like those on Robonauts robots and rovers developed at NASA.</p>
+        
+                <h2>Bio</h2>
+                <p>Ryan Stockton currently works as a Robotics Specialist at NASA’s Johnson Space Center designing lunar exploration rovers. He has worked on the design of the VIPER flight unit, prototype rovers such as the Lunar Terrain Vehicle and Space Exploration Vehicle, and NASA’s Robotics Alliance Project which sponsors hundreds of FRC teams every season. 
+
+                    He is an alumnus and mechanical mentor of FRC Team 118, the Robonauts and also a Co-Lead of the Robonauts Everybot program.
+                    </p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed panel sustain scale tech">
+                <h2>Software Panel</h2>
+                <p>Austin Schuh (971), Jared Russell (254), Marshall (900), Peter Johnson (WPI Library)</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>With a combined 50 years of FRC software experience, these panelists have been behind some of the biggest innovations in FRC software history. Come along to ask questions and learn more about controls and software in FRC.</p>
+        
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Technical</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed roudtable sustain scale teamorg">
+                <h2>Sponsor Roundtable</h2>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Sponsors: how do you get them? How do you keep them? Come along for a facilited roundtable on all things related to sponsors.</p>
+        
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation start sustain teamorg marketing">
+                <h2>SURVIVE: How to Run a Sustainable Team without Losing Your Mind</h2>
+                <p>Elise Cronin-Hurley and Wendy Austin: Team 1902, 4-H Exploding Bacon Robotics</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Much like a robot, running a youth development organization involves a lot of effectively moving parts. Whether you are a veteran or rookie mentor, in this workshop you will discover practical tips for building sustainable systems and improve your team’s efficiency in areas like organizational, communications, and finance.  
+                    Wendy and Elise have served in leadership and volunteer roles with FIRST teams and competitions since 2006 and come with years of practical team leadership experience from all levels of FIRST. They will share relatable challenges and solutions implemented to make their leadership experiences more sustainable.
+                    Teams face a lot of challenges, this workshop provides approaches, not specific ‘one fits all solutions’, to take back and start to evaluate your own team’s challenges and opportunities and create specific goals for your team. 
+                    Presented at FIRST Championship in conjunction with the THRIVE workshop in two full and very well received 45 minute sessions.</p>
+        
+                <h2>Bio</h2>
+                <p>Elise has been privileged to both inherit and pass along leadership of a thriving FIRST Robotics Competition team and navigate the ever growing challenges and opportunities required to manage today’s youth development organizations.  Dedicated hands-on volunteer experience mentoring and managing a year round team and decades consulting non-profits on communications and organization.</p>
+                <ul>    
+                    <li>4-H Exploding Bacon Team 1902, 2011- to current</li>  
+                    <li>Imagery, Outreach & Awards mentor, since 2011</li>
+                    <li>Team Lead, 2016-2019</li>
+                    <li>FIRST LEGO League, FIRST TECH Challenge & FIRST Robotics Competition event volunteer & judge since 2012.</li>
+                    <li>Orlando and Tallahassee Regional Planning Committees, Website, Graphics, & Communications</li>
+                    <li>FIRST Hall of Fame, Communications, 2020 - current</li>
+                </ul>
+
+                <p>Experience:</p>
+                <ul>
+                    <li>Extensive history of youth organization development: church youth leader, Girl Scout leader, PTA President and more.</li>
+                    <li>4-H Exploding Bacon Team 1902, leadership 2006-2013 (an original Bacon mentor)</li>
+                    <li>Gra-V Robotics Team 5816, an original team mentor</li>
+                    <li>FIRST Regional Director North & Central Florida, current</li>
+                    <li>FIRST: numerous roles as a volunteer and judge at competitions; volunteer, events and outreach, since 2006</li>
+                </ul>   
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Starting a Team (Rookie and Novice)</li>
+                    <li>Sustaining a Team (Intermediate)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Marketing</li>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed roundtable sustain scale teamorg">
+                <h2>Teams as Nonprofits</h2>
+                <p>Brook Ostrom: Team 1678, Citrus Circuits</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Is a nonprofit right for your team? How do you even get started? Come to this roundtable for a facilitated conversations on creating (and maintaining!) a nonprofit for your team.</p>
+        
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Sustaining a Team (Intermediate)</li>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale teamorg">
+                <h2>The "A" Teams (Appreciate, Apprentice and Alpha) - Why three teams at one high school? How does it work? </h2>
+                <p>Norman Morgan: Team 2468, Appreciate</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Three teams in one high school under one management and set of mentors can be crazy at times but it works for us.  How did it all come about and why?  What is the reasoning behind the structure? Come find out the reasoning, structure, struggles and positives of having multiple teams.  This coming season will be our fifth year to have two teams and our third year to have three teams.  Presentation will include offseason training examples, goals for each team, class/curriculum structure, mentor roles/responsibilities and my goals as an educator. </p>
+        
+                <h2>Bio</h2>
+                <p>Norman Morgan began FRC 2468 Team Appreciate in 2008. He brings 37 years of successful classroom & athletic coaching experience to his program. Drawing upon past knowledge & personal interactions, his program is modeled after previous coaching & leadership roles from athletics, yearbook & student council. His program has grown from 35 students in 2008 to a yearly participation of 160+ high school students competing in FRC &FTC. For the past four years, his program based at Westlake High School in Austin, Texas has fielded multiple FRC teams from the same school, utilized the same mentors/teachers & work space for the teams. The program has experienced growth since day one & has been managed in a variety of ways including seven FTC teams & one FRC team to now two FTC teams & three FRC teams( FRC 2468, FRC 2687 & FRC 2689) for 125+ students each year.  He depends heavily on trusting his mentors and student leadership for day to day operations.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation scale teamorg">
+                <h2>The Development Team Model: Spectrum & Photon</h2>
+                <p>Allen Gregory: Team 3847, Spectrum</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>I plan to present on how Spectrum 3847 and Photon 8515 run as two teams under one roof. Our system is different than most other sibling team models as all students are on both teams. 8515 is our development team and is for 9th grade students and 10th grade students that are new to our team. It allows them to get much more experience with assembly early in their careers. We also have a limited number of students and mentors (40ish students and 4 technical mentors) across both teams.</p>
+        
+                <h2>Bio</h2>
+                <p>We have run our development team model since 2021. I have 21 years of FRC experience, 2019 Woodie Flowers Award Recipient. 
+
+                    I struggled deciding what to choose to present, so if there is another topic that you all want to see done, I'm happy to do that as well. I'm pretty confident I could do most anything for the rookie track outside of finance/fundraising stuff. Event logistics, MCC/everybot stuff, CAD, shop setup, Laser cutters/3d printers, etc.</p>
+
+                <h2>Tracks</h2>
+                <ul>
+                    <li>Scaling a Team (Advanced)</li>
+                </ul>
+
+                <h2>Streams</h2>
+                <ul>
+                    <li>Team Organization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="talk">
+            <button type="button" class="collapsible closed presentation sustain scale teamorg marketing">
+                <h2>THRIVE: Building a Team Culture without Losing Your Mind.</h2>
+                <p>Elise Cronin-Hurley and Wendy Austin: Team 1902, 4-H Exploding Bacon Robotics</p>
+            </button>
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>Discover why team culture matters. Learn methods to help your team thrive through complex challenges. This workshop will provide some tips on how to create an impactful team culture through planning, outreach, and fundraising. 
+                    Wendy and Elise have served in leadership and volunteer roles with FIRST teams and competitions since 2006 and come with years of practical team leadership experience from all levels of FIRST. They will share relatable challenges and solutions implemented to make their leadership experiences more sustainable.
+                    From business plan tips to fundraising and outreach techniques, Teams face a lot of challenges, this workshop provides approaches, not specific ‘one fits all solutions’, to take back and start to evaluate your own team’s challenges and opportunities and create specific goals for your team.  
+                    Presented at FIRST Championship in conjunction with the SURVIVE workshop in two full and very well received 45 minute sessions.  
+                    </p>
+        
+                    <h2>Bio</h2>
+                    <p>Elise has been privileged to both inherit and pass along leadership of a thriving FIRST Robotics Competition team and navigate the ever growing challenges and opportunities required to manage today’s youth development organizations.  Dedicated hands-on volunteer experience mentoring and managing a year round team and decades consulting non-profits on communications and organization.</p>
+                    <ul>    
+                        <li>4-H Exploding Bacon Team 1902, 2011- to current</li>  
+                        <li>Imagery, Outreach & Awards mentor, since 2011</li>
+                        <li>Team Lead, 2016-2019</li>
+                        <li>FIRST LEGO League, FIRST TECH Challenge & FIRST Robotics Competition event volunteer & judge since 2012.</li>
+                        <li>Orlando and Tallahassee Regional Planning Committees, Website, Graphics, & Communications</li>
+                        <li>FIRST Hall of Fame, Communications, 2020 - current</li>
+                    </ul>
+    
+                    <p>Experience:</p>
+                    <ul>
+                        <li>Extensive history of youth organization development: church youth leader, Girl Scout leader, PTA President and more.</li>
+                        <li>4-H Exploding Bacon Team 1902, leadership 2006-2013 (an original Bacon mentor)</li>
+                        <li>Gra-V Robotics Team 5816, an original team mentor</li>
+                        <li>FIRST Regional Director North & Central Florida, current</li>
+                        <li>FIRST: numerous roles as a volunteer and judge at competitions; volunteer, events and outreach, since 2006</li>
+                    </ul>   
+    
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Starting a Team (Rookie and Novice)</li>
+                        <li>Sustaining a Team (Intermediate)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Marketing</li>
+                        <li>Team Organization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed presentation sustain scale teamorg other">
+                    <h2>Using FIRST-Based Curriculum & Inclusive Teaching Practices to Promote a Diverse, Equitable & Inclusive Team</h2>
+                    <p>Dee Clark: Team 7407, Wired Boars</p>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>My presentation will focus on how to use FIRST-based curriculum and inclusive teaching practices to promote diversity, equity and inclusion within a FRC team as well as to maximize student learning and engagement in the offseason and build season. On 7407, using FRC-based curriculum in our fall, spring and summer training programs have proven massively effective in preparing students to take major ownership of the robot during build season, reaching different types of learners, including neurodivergent students, recruiting underrepresented students in STEM into the team, as well as growing confidence and self esteem in all students. This conference will go over how to build different FRC-based projects into classroom settings as well as FRC team training. We will also discuss how to couple these projects with inclusive teaching practices to maximize student learning and engagement, challenge our own internal biases to become better educators, and ensure no students get left behind. </p>
+            
+                    <h2>Bio</h2>
+                    <p>I started in FRC as a junior in high school on Team 20 based out of Shenendehowa High School in Clifton Park, NY. After taking on the drive coach role my senior year, I was absolutely hooked on FIRST and wanted to continue my journey as a mentor, and have been mentoring for 11 years now in FRC & FLL, and have started 2 FRC teams and 10 FLL teams. However, I faced serious sexism and bias inside and outside of my team as a student and mentor and have been determined to change the culture within FIRST to ensure all students have equal opportunities and are treated with respect regardless of lived experience. As a former working engineer and current math & robotics teacher, I have gained a wholistic perspective on what students need to be prepared for engineering school and industry, as well as what different types of students need to learn and thrive in a STEM environment. </p>
+    
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Sustaining a Team (Intermediate)</li>
+                        <li>Scaling a Team (Advanced)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Team Organization</li>
+                        <li>Other: Diversity, Equity, and Inclusion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed presentation start pm teamorg technical">
+                    <h2>Utilizing MCC, Starter Bot or Everybot concepts for successful mentorship or for your team's success</h2>
+                    <p>Norman Morgan: Team 2468, Team Appreciate</p>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>Need a good foundation to start an FRC team whether for yourself or for teams you are mentoring? FRC 2468 has utilized EveryBot and similar programs to mentoring eight rookies teams over the past seven years.  Utilizing these programs in the months leading up to FRC season kickoff can establish the foundation for a successful start to a season.  Clearly defined goals and understanding how the goals relate to the modeled program builds allow a team to focus on getting a robust robot built to tackle the season challenge.  A team who experiences success at a tournament will more than likely be more successful at the next tournament or will be motivated to improve for the next season.  FRC 2468 utilizes this system to train and develop our FRC 2689 Team Alpha students to develop a foundation within the novice FRC students.  </p>
+            
+                    <h2>Bio</h2>
+                    <p>FRC 2468 has mentored eight rookie teams in FRC over the past seven years.  Four of those teams utilized a planned robot (MCC, StarterBot or EveryBot) for two seasons with minor modifications.  All of the teams successfully competed in the all of the playoffs the teams competed in for their seasons.  Success on the field starts at home during build seasons.  We have utilized these principles not only to train our rookie FRC students in our program at FRC 2468 but also at the other teams we have mentored as well.  Offseason plans will be provided on how to break down past seasons so that teams will be prepared to get a good start to the season at kickoff.  </p>
+    
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Starting a Team (Rookie and Novice)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Team Organization</li>
+                        <li>Technical</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed presentation start sustain pm awards">
+                    <h2>Where the Big Holes Are</h2>
+                    <p>Joan Horvath: Judge Advisor</p>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>From a perspective of a long-term judge and sometimes consultant, I will talk about some of the commonest preventable teams of omission and commission, particularly (though not exclusively) for younger teams. In particular I can talk about strategies for planning in the fall, defining useful tests during build season, why it can be a bad idea to use tech for tech's sake, and how to think ahead about what ideally should happen at competition.</p>
+            
+                    <h2>Bio</h2>
+                    <p>I have been an FRC judge in the Los Angeles area for 23 years, and a Judge Advisor since 2020. I was named the 2023 Volunteer of the Year at the Los Angeles Regional. I have also been an occasional technical consultant to Team 1452 (Omnicats). I am the co-founder of consulting company Nonscriptum LLC (www.nonscriptum.com) which trains educators and scientists on effective use of 3D printing and open-source electronics. We have written 11 books and a variety of LinkedIn Learning courses on 3D printing and hands-on STEM learning. Our most recent book, Make: Calculus, uses LEGO bricks and 3D prints to teach core calculus courses. I am an MIT and UCLA engineering alumna.</p>
+    
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Sustaining a Team (Intermediate)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Awards</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed roundtable sustain scale teamorg other">
+                    <h2>When Mentors Disagree Roundtable</h2>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>Any group is likely to have interpersonal conflict. How do you handle this when your mentors are all mentors? Be ready at this roundtable for a frank conversation about challenging situations and how to handle them.</p>
+            
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Sustaining a Team (Intermediate)</li>
+                        <li>Scaling a Team (Advanced)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Team Organization</li>
+                        <li>Other: Mentoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed roundtable sustain scale teamorg other">
+                    <h2>Working Through Challenges with Students Roundtable</h2>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>How do you help students through challenges? How do we empower them and ourselves when difficult situations arise? Be ready at this roundtable for a frank conversation about challenging situations and how to handle them.</p>
+            
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Sustaining a Team (Intermediate)</li>
+                        <li>Scaling a Team (Advanced)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Team Organization</li>
+                        <li>Other: Mentoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="talk">
+                <button type="button" class="collapsible closed presentation scale eventlogs scout">
+                    <h2>World-Class, Experience-Focused Drive Coaching</h2>
+                    <p>Mike Corsetto: Team 1678, Citrus Circuits</p>
+                </button>
+                <div class="content">
+                    <h2>Abstract</h2>
+                    <p>In this presentation, I'll unwrap the processes I use to establish consistent match execution at FRC events, that both increases likelihood of positive experiences for all alliance members and maximizes competitive results.  I'll review all stages of my drive coaching process, including strategy development, alliance prep, match management and post-match wrap-up.</p>
+            
+                    <h2>Bio</h2>
+                    <p>I've been a drive coach in FRC for over a decade, with event wins as drive coach on multiple FRC teams. As drive coach, I personally have one of the highest event win conversion rates at both the Regional and Championship Division level.</p>
+    
+                    <h2>Tracks</h2>
+                    <ul>
+                        <li>Scaling a Team (Advanced)</li>
+                    </ul>
+    
+                    <h2>Streams</h2>
+                    <ul>
+                        <li>Event Logistics</li>
+                        <li>Scouting and Strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+    </div>
+    <div class="column legend">
+
+        <button type="button" class="item clear" id="clear">
+            <p>Clear All Filters</p>
+        </button>
+
+        <h2>Filter by Track</h2>
+
+        <button type="button" class="item start" id="start">
+            <p>Starting a Team</p>
+            <p>(Rookie and Novice)</p>
+        </button>
+
+        <button type="button" class="item sustain" id="sustain">
+            <p>Susataining a Team</p>
+            <p>(Intermediate)</p>
+        </button>
+
+        <button type="button" class="item scale" id="scale">
+            <p>Scaling a Team</p>
+            <p>(Advanced)</p>
+        </button>
+
+        <h2>Filter by Session Type</h2>
+
+        <button type="button" class="item session" id="panel">
+            <p>Panel</p>
+        </button>
+
+        <button type="button" class="item session" id="presentation">
+            <p>Presentation</p>
+        </button>
+
+        <button type="button" class="item session" id="roundtable">
+            <p>Roundtable</p>
+        </button>
+
+
+        <h2>Filter by Stream</h2>
+
+        <button type="button" class="item tech" id="tech">
+            <p>Technical</p>
+        </button>
+        
+        <button type="button" class="item teamorg" id="teamorg">
+            <p>Team Organization</p>
+        </button>
+
+        <button type="button" class="item marketing" id="marketing">
+            <p>Marketing</p>
+        </button>
+
+        <button type="button" class="item eventlogs" id="eventlogs">
+            <p>Event Logistics</p>
+        </button>
+
+        <button type="button" class="item scout" id="scout">
+            <p>Scouting and Strategy</p>
+        </button>
+
+        <button type="button" class="item pm" id="pm">
+            <p>Project Management</p>
+        </button>
+
+        <button type="button" class="item awards" id="awards">
+            <p>Awards</p>
+        </button>
+
+        <button type="button" class="item other" id="other">
+            <p>Other</p>
+        </button>
+    </div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.classList.toggle("closed");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var buttons = document.getElementsByClassName("item");
+// var tracks = ["teamorg", "marketing", "eventlogs", "scout", "pm", "awards", "tech", "other"]
+var lastSelcted = document.getElementById("clear");
+for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+    var track = this.id;
+    toggleLastSelected(this);
+    if (track != "clear") {
+        this.classList.toggle("selected");
+    }
+    for(j = 0; j < coll.length; j++) {
+        var content = coll[j];
+        if (content.classList.contains(track) || track == "clear") {
+        content.style.display = "block";
+        } else {
+        content.style.display = "none";
+        }
+    }
+  });
+}
+
+function toggleLastSelected(e) {
+    if (lastSelcted.id != "clear") {
+        lastSelcted.classList.toggle("selected");
+    }
+    lastSelcted = e;
+}
+
+</script>
+
+</body>
+</html>
